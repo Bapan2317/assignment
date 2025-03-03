@@ -8,9 +8,7 @@ function getClickResult(id) {
     event.preventDefault();
     alert("Board updated successfully");
 
-    const countAssignmentIncomplete = getElementByIDtoInnerText(
-      "count-assignment-incomplete"
-    );
+    const countAssignmentIncomplete = getElementByIDtoInnerText("count-assignment-incomplete");
     const decreaseCountAssignment = countAssignmentIncomplete - 1;
     document.getElementById("count-assignment-incomplete").innerText =
       decreaseCountAssignment;
@@ -24,13 +22,15 @@ function getClickResult(id) {
     this.disabled = true;
   });
 }
-
-function getComment(id) {
+function getComment(id, value) {
   document.getElementById(id).addEventListener("click", function (event) {
-    const commentText = getTime();
+    const titles = document.getElementById(value).innerText
+    const commentText =titles + ' ' + getTime();
     const commentContainer = document.getElementById("comment-container");
     const commentElement = document.createElement("p");
     commentElement.innerText = commentText;
     commentContainer.appendChild(commentElement);
   });
 }
+
+

@@ -60,7 +60,7 @@
         </div>
       </header>
       <!-- main -->
-      <main class="mt-6">
+      <main class="py-6">
         <div class="flex gap-6 mx-auto">
           <!-- Left content -->
           <section id="all-asignment" class="bg-white rounded-xl">
@@ -91,14 +91,14 @@
                 </div>
                 <!-- card 2 -->
                 <div
-                  id="discover"
+                  id="discoverd"
                   class="flex gap-4 items-center bg-green-500 rounded-md text-white text-2xl flex-1 pl-4"
                 >
-                  <img src="assets/board.png" alt="" />
-                  <h2>
-                    Discover Something <br />
-                    New Today!
-                  </h2>
+                  <a class="flex gap-6 items-center" href="main.html"><img src="assets/board.png" alt="" />
+                    <h2>
+                      Discover Something <br />
+                      New Today!
+                    </h2></a>
                 </div>
                 <!-- card 3 -->
                 <div
@@ -122,10 +122,13 @@
                     <p class="px-4 py-2 inline-block bg-white rounded-xl">
                       ShopEase
                     </p>
-                    <h2 class="text-2xl assignment-title">
+                    <h2
+                      id="assignment-one-title"
+                      class="text-2xl assignment-title"
+                    >
                       Fix Mobile Button Issue
                     </h2>
-                    <p class="bg-white rounded-xl p-4 pb-6 text-gray-500">
+                    <p class="bg-white rounded-xl p-4 pb-6 text-gray-500 truncate">
                       Debug using Chrome <br />
                       DevTools, check for overlapping...
                     </p>
@@ -152,12 +155,17 @@
                     <p class="px-4 py-2 inline-block bg-white rounded-xl">
                       CloudSync
                     </p>
-                    <h2 class="text-2xl assignment-title">Add Dark Mode</h2>
+                    <h2
+                      id="assignment-two-title"
+                      class="text-2xl assignment-title"
+                    >
+                      Add Dark Mode
+                    </h2>
                     <p
-                      class="bg-white rounded-xl p-4 pb-6 text-gray-500 inline-block"
+                      class="bg-white rounded-xl p-4 pb-6 text-gray-500 inline-block truncate"
                     >
                       Store the user's preference in <br />
-                      localStorage, update CSS variab...
+                      localStorage, update CSS variable...
                     </p>
                   </div>
                   <hr class="m-4 border-double" />
@@ -182,8 +190,10 @@
                     <p class="px-4 py-2 inline-block bg-white rounded-xl">
                       SwiftPay
                     </p>
-                    <h2 class="text-2xl">Optimize Home page </h2>
-                    <p class="bg-white rounded-xl p-4 pb-6 text-gray-500">
+                    <h2 id="assignment-three-title" class="text-2xl">
+                      Optimize Home page 
+                    </h2>
+                    <p class="bg-white rounded-xl p-4 pb-6 text-gray-500 truncate">
                       Debug using Chrome <br />
                       DevTools, check for overlapping...
                     </p>
@@ -210,9 +220,11 @@
                     <p class="px-4 py-2 inline-block bg-white rounded-xl">
                       Meta
                     </p>
-                    <h2 class="text-2xl">Add new emoji 🤲 </h2>
-                    <p class="bg-white rounded-xl p-4 pb-6 text-gray-500">
-                      Debug using Chrome <br />
+                    <h2 id="assignment-four-title" class="text-2xl">
+                      Add new emoji
+                    </h2>
+                    <p class="bg-white rounded-xl p-4 pb-6 text-gray-500 truncate ">
+                      Debug using Chrome <br>
                       DevTools, check for overlapping...
                     </p>
                   </div>
@@ -238,8 +250,10 @@
                     <p class="px-4 py-2 inline-block bg-white rounded-xl">
                       Google LLC
                     </p>
-                    <h2 class="text-2xl">Integrate OpenAI API</h2>
-                    <p class="bg-white rounded-xl p-4 pb-6 text-gray-500">
+                    <h2 id="assignment-five-title" class="text-2xl">
+                      Integrate OpenAI API
+                    </h2>
+                    <p class="bg-white rounded-xl p-4 pb-6 text-gray-500 truncate">
                       Debug using Chrome <br />
                       DevTools, check for overlapping...
                     </p>
@@ -266,8 +280,10 @@
                     <p class="px-4 py-2 inline-block bg-white rounded-xl">
                       Glassdor
                     </p>
-                    <h2 class="text-2xl">Improve Job searching</h2>
-                    <p class="bg-white rounded-xl p-4 pb-6 text-gray-500">
+                    <h2 id="assignment-six-title" class="text-2xl">
+                      Improve Job searching
+                    </h2>
+                    <p class="bg-white rounded-xl p-4 pb-6 text-gray-500 truncate">
                       Debug using Chrome <br />
                       DevTools, check for overlapping...
                     </p>
@@ -291,9 +307,9 @@
               </div>
             </section>
           </section>
-          <!-- right content -->
+          <!-- right content comment box -->
           <section
-            class="flex bg-white items-center mx-auto flex-col rounded-lg p-6 flex-1"
+            class="flex bg-white items-center mx-auto text-center flex-col rounded-lg p-6 flex-1"
           >
             <div>
               <div class="flex gap-2 flex-wrap">

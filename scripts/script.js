@@ -8,7 +8,7 @@ document.getElementById("color-theme").addEventListener("click", function () {
 
 // discover
 
-document.getElementById("discover").addEventListener("click", function () {
+document.getElementById("discoverd").addEventListener("click", function () {
   window.location.href = "../main.html";
 });
 
@@ -16,9 +16,7 @@ document.getElementById("discover").addEventListener("click", function () {
 function date() {
   let currentDate = new Date();
   let formattedDate = currentDate.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
+    year: "numeric", month: "long", day: "numeric",
   });
   return formattedDate;
 }
@@ -28,11 +26,7 @@ document.getElementById("dateDisplay").innerText = date();
 
 function getTime() {
   const options = {
-    timeZone: "Asia/Kolkata",
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-    hour12: true,
+    timeZone: "Asia/Kolkata",hour: "2-digit",minute: "2-digit",second: "2-digit",hour12: true,
   };
   let currentTime = new Date().toLocaleTimeString("en-US", options);
   return currentTime;
@@ -50,20 +44,20 @@ document
 
 // call the all click buttons
 
-getClickResult("assignment-one", "assignment-one-title");
-getComment("assignment-one");
+getClickResult("assignment-one");
+getComment("assignment-one", "assignment-one-title");
 
 getClickResult("assignment-two");
-getComment("assignment-two");
+getComment("assignment-two", "assignment-two-title");
 
 getClickResult("assignment-three");
-getComment("assignment-three");
+getComment("assignment-three", "assignment-three-title");
 
 getClickResult("assignment-four");
-getComment("assignment-four");
+getComment("assignment-four", "assignment-four-title");
 
 getClickResult("assignment-five");
-getComment("assignment-five");
+getComment("assignment-five", "assignment-five-title");
 
 getClickResult("assignment-six");
-getComment("assignment-six");
+getComment("assignment-six", "assignment-six-title");
