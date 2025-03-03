@@ -9,7 +9,7 @@ document.getElementById("color-theme").addEventListener("click", function () {
 // discover
 
 document.getElementById("discover").addEventListener("click", function () {
-  window.location.href = "../discoverd.html";
+  window.location.href = "../main.html";
 });
 
 // date
